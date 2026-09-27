@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | Lens & Light Photography</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/gallery.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Studio Logo" />
+        <span>Lens & Light</span>
+      </a>
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html" class="active">Gallery</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="page-banner">
+    <h1>Gallery</h1>
+    <p>A glimpse into our favorite captures</p>
+  </section>
+
+  <!-- ===== FILTER BUTTONS ===== -->
+  <section class="gallery-section">
+    <div class="container">
+      <div class="filter-buttons" id="filterButtons">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="nature">Nature</button>
+        <button class="filter-btn" data-filter="portrait">Portrait</button>
+        <button class="filter-btn" data-filter="wildlife">Wildlife</button>
+      </div>
+
+      <!-- ===== GALLERY GRID ===== -->
+      <div class="gallery-grid" id="galleryGrid">
+        <div class="gallery-item" data-category="nature">
+          <img src="images/gallery/nature1.jpg" alt="Nature 1" />
+          <div class="overlay"><span>Nature</span></div>
+        </div>
+        <div class="gallery-item" data-category="nature">
+          <img src="images/gallery/nature2.jpg" alt="Nature 2" />
+          <div class="overlay"><span>Nature</span></div>
+        </div>
+        <div class="gallery-item" data-category="portrait">
+          <img src="images/gallery/portrait1.jpg" alt="Portrait 1" />
+          <div class="overlay"><span>Portrait</span></div>
+        </div>
+        <div class="gallery-item" data-category="portrait">
+          <img src="images/gallery/portrait2.jpg" alt="Portrait 2" />
+          <div class="overlay"><span>Portrait</span></div>
+        </div>
+        <div class="gallery-item" data-category="wildlife">
+          <img src="images/gallery/wildlife1.jpg" alt="Wildlife 1" />
+          <div class="overlay"><span>Wildlife</span></div>
+        </div>
+        <div class="gallery-item" data-category="wildlife">
+          <img src="images/gallery/wildlife2.jpg" alt="Wildlife 2" />
+          <div class="overlay"><span>Wildlife</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LIGHTBOX ===== -->
+  <div class="lightbox" id="lightbox">
+    <span class="lightbox-close" id="lightboxClose">&times;</span>
+    <span class="lightbox-prev" id="lightboxPrev">&#10094;</span>
+    <img src="" alt="Enlarged view" id="lightboxImg" />
+    <span class="lightbox-next" id="lightboxNext">&#10095;</span>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>&copy; <span id="year"></span> Lens & Light Photography. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">Pinterest</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>

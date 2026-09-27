@@ -1,0 +1,105 @@
+/* ==========================================================
+   RESPONSIVE STYLES
+========================================================== */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .about-grid,
+  .service-card,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card.reverse .service-info {
+    order: 0;
+  }
+
+  .featured-grid,
+  .values-grid,
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-overlay h1 {
+    font-size: 2.3rem;
+  }
+}
+
+/* Mobile Nav */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .main-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: var(--color-dark);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
+
+  .main-nav.open {
+    max-height: 400px;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    padding: 20px 5%;
+    gap: 18px;
+  }
+
+  .hero-overlay h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-overlay p {
+    font-size: 1rem;
+  }
+
+  .featured-grid,
+  .values-grid,
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .filter-buttons {
+    gap: 10px;
+  }
+
+  .filter-btn {
+    padding: 8px 18px;
+    font-size: 0.75rem;
+  }
+
+  .lightbox-prev,
+  .lightbox-next {
+    font-size: 1.4rem;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .page-banner h1 {
+    font-size: 2rem;
+  }
+
+  .intro h2,
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    padding: 12px 22px;
+    font-size: 0.9rem;
+  }
+}
